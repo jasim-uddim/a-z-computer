@@ -1,0 +1,56 @@
+[
+  {
+    "_id": 1,
+    "name": "mouse",
+    "img": "https://i.ibb.co/Nr8XXyj/mouse.png",
+    "description": "price",
+    "price": "400",
+    "available quantity": "1000",
+    "minimum order quantity": "100"
+  },
+  {
+    "_id": 2,
+    "name": "mouse",
+    "img": "https://i.ibb.co/Nr8XXyj/mouse.png",
+    "description": "price",
+    "price": "400",
+    "available quantity": "1000",
+    "minimum order quantity": "100"
+  },
+  {
+    "_id": 3,
+    "name": "mouse",
+    "img": "https://i.ibb.co/Nr8XXyj/mouse.png",
+    "description": "price",
+    "price": "400",
+    "available quantity": "1000",
+    "minimum order quantity": "100"
+  },
+  {
+    "_id": 4,
+    "name": "mouse",
+    "img": "https://i.ibb.co/Nr8XXyj/mouse.png",
+    "description": "price",
+    "price": "400",
+    "availableQuantity": "1000",
+    "minimumOrderQuantity": "100"
+  },
+  {
+    "_id": 5,
+    "name": "mouse",
+    "img": "https://i.ibb.co/Nr8XXyj/mouse.png",
+    "description": "price",
+    "price": "400",
+    "available quantity": "1000",
+    "minimum order quantity": "100"
+  },
+  {
+    "_id": 6,
+    "name": "mouse",
+    "img": "https://i.ibb.co/Nr8XXyj/mouse.png",
+    "description": "price",
+    "price": "400",
+    "available quantity": "1000",
+    "minimum order quantity": "100"
+  }
+]
