@@ -3,34 +3,34 @@
     "_id": 1,
     "name": "mouse",
     "img": "https://i.ibb.co/Nr8XXyj/mouse.png",
-    "description": "price",
+    "description": "The mouse is a small, movable device that lets you control a range of things on a computer. Most types of mouse have two buttons, and some will have a wheel in between the buttons. Most types of mouse connect to the computer with a cable, and use the computer's power to work",
     "price": "400",
-    "available quantity": "1000",
-    "minimum order quantity": "100"
+    "availableQuantity": "1000",
+    "minimumOrderQuantity": "100"
   },
   {
     "_id": 2,
     "name": "mouse",
     "img": "https://i.ibb.co/Nr8XXyj/mouse.png",
-    "description": "price",
+    "description": "The mouse is a small, movable device that lets you control a range of things on a computer. Most types of mouse have two buttons, and some will have a wheel in between the buttons. Most types of mouse connect to the computer with a cable, and use the computer's power to work",
     "price": "400",
-    "available quantity": "1000",
-    "minimum order quantity": "100"
+    "availableQuantity": "1000",
+    "minimumOrderQuantity": "100"
   },
   {
     "_id": 3,
     "name": "mouse",
     "img": "https://i.ibb.co/Nr8XXyj/mouse.png",
-    "description": "price",
+    "description": "The mouse is a small, movable device that lets you control a range of things on a computer. Most types of mouse have two buttons, and some will have a wheel in between the buttons. Most types of mouse connect to the computer with a cable, and use the computer's power to work",
     "price": "400",
-    "available quantity": "1000",
-    "minimum order quantity": "100"
+    "availableQuantity": "1000",
+    "minimumOrderQuantity": "100"
   },
   {
     "_id": 4,
     "name": "mouse",
     "img": "https://i.ibb.co/Nr8XXyj/mouse.png",
-    "description": "price",
+    "description": "The mouse is a small, movable device that lets you control a range of things on a computer. Most types of mouse have two buttons, and some will have a wheel in between the buttons. Most types of mouse connect to the computer with a cable, and use the computer's power to work",
     "price": "400",
     "availableQuantity": "1000",
     "minimumOrderQuantity": "100"
@@ -39,18 +39,18 @@
     "_id": 5,
     "name": "mouse",
     "img": "https://i.ibb.co/Nr8XXyj/mouse.png",
-    "description": "price",
+    "description": "The mouse is a small, movable device that lets you control a range of things on a computer. Most types of mouse have two buttons, and some will have a wheel in between the buttons. Most types of mouse connect to the computer with a cable, and use the computer's power to work",
     "price": "400",
-    "available quantity": "1000",
-    "minimum order quantity": "100"
+    "availableQuantity": "1000",
+    "minimumOrderQuantity": "100"
   },
   {
     "_id": 6,
     "name": "mouse",
     "img": "https://i.ibb.co/Nr8XXyj/mouse.png",
-    "description": "price",
+    "description": "The mouse is a small, movable device that lets you control a range of things on a computer. Most types of mouse have two buttons, and some will have a wheel in between the buttons. Most types of mouse connect to the computer with a cable, and use the computer's power to work",
     "price": "400",
-    "available quantity": "1000",
-    "minimum order quantity": "100"
+    "availableQuantity": "1000",
+    "minimumOrderQuantity": "100"
   }
 ]
