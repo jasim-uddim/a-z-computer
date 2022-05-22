@@ -43,6 +43,7 @@ const SignUp = () => {
   }
 
   if (user || gUser) {
+    console.log(user || gUser);
     navigate("/purchase");
   }
   // if (token) {

@@ -28,9 +28,11 @@ const Login = () => {
 
   useEffect(() => {
     if (user || gUser) {
+      console.log(user);
       navigate(from, { replace: true });
     }
   }, [user, gUser, from, navigate]);
+
   // useEffect( () =>{
   //     if (token) {
   //         navigate(from, { replace: true });
