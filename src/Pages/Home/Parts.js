@@ -16,21 +16,20 @@ const Parts = ({ part }) => {
     navigate("/purchase");
   };
   return (
-    <div className="p-2">
-      <div>
-        <img src={img} alt="" />
-        <div className="px-5">
-          <h1 className="text-xl">Name: {name}</h1>
-          <p>price:$ {price}</p>
-          <p>Available quantity: {availableQuantity}</p>
-          <p>Minimum Order quantity: {minimumOrderQuantity}</p>
-          <p>{description}</p>
-          <div className="text-center mt-5">
-            <button onClick={handleBuyNow} className="btn btn-primary">
-              {" "}
-              buy now
-            </button>
-          </div>
+    <div class="card w-96 bg-base-100 shadow-xl">
+      <figure class="px-10 pt-10">
+        <img src={img} alt="Shoes" class="rounded-xl" />
+      </figure>
+      <div class="card-body items-center text-center">
+        <h2 class="card-title">{name}</h2>
+        <p>Price:$ {price}</p>
+        <p>Available Quantity:{availableQuantity}</p>
+        <p>Minimum Order Quantity:{minimumOrderQuantity}</p>
+        <p>{description}</p>
+        <div class="card-actions">
+          <button onClick={handleBuyNow} class="btn btn-primary">
+            Buy Now
+          </button>
         </div>
       </div>
     </div>

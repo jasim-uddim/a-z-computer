@@ -9,6 +9,7 @@ import Purchase from "./Pages/Home/Purchase";
 import Login from "./Pages/Login/Login";
 import RequireAuth from "./Pages/Login/RequireAuth";
 import SignUp from "./Pages/Login/SignUp";
+import Review from "./Pages/Home/Review";
 
 function App() {
   return (
@@ -23,6 +24,14 @@ function App() {
           element={
             <RequireAuth>
               <Purchase></Purchase>
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="/review"
+          element={
+            <RequireAuth>
+              <Review></Review>
             </RequireAuth>
           }
         ></Route>

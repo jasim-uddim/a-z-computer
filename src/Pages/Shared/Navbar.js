@@ -20,15 +20,18 @@ const Navbar = () => {
       <li>
         <Link to="/purchase">Purchase</Link>
       </li>
-      <li>
-        <Link to="/review">Review</Link>
-      </li>
+
       <li>
         <Link to="/contact">Contact</Link>
       </li>
       <li>
         <Link to="/about">About</Link>
       </li>
+
+      <li>
+        <Link to="/review">Review</Link>
+      </li>
+
       {user && (
         <li>
           <Link to="/dashboard">Dashboard</Link>
@@ -80,7 +83,7 @@ const Navbar = () => {
       <div className="navbar-end">
         <label
           tabIndex="1"
-          for="dashboard-sidebar"
+          htmlFor="dashboard-sidebar"
           className="btn btn-ghost lg:hidden"
         >
           <svg
