@@ -16,7 +16,7 @@ const Parts = ({ part }) => {
     navigate("/purchase");
   };
   return (
-    <div className="card w-96 bg-base-100 shadow-xl">
+    <div className="card bg-base-100 shadow-xl">
       <figure className="px-10 pt-10">
         <img src={img} alt="Shoes" className="rounded-xl" />
       </figure>
@@ -26,6 +26,11 @@ const Parts = ({ part }) => {
         <p>Available Quantity:{availableQuantity}</p>
         <p>Minimum Order Quantity:{minimumOrderQuantity}</p>
         <p>{description}</p>
+        <input
+          type="text"
+          placeholder="order quantity"
+          class="input input-bordered w-full max-w-xs"
+        />
         <div className="card-actions">
           <button onClick={handleBuyNow} className="btn btn-primary">
             Buy Now

@@ -10,6 +10,10 @@ const BusinessSummery = () => {
   const handleContact = () => {
     navigate("/support");
   };
+
+  const handleQuote = () => {
+    navigate("/review");
+  };
   return (
     <div>
       <h1 className="text-center text-primary font-bold text-4xl">
@@ -51,7 +55,7 @@ const BusinessSummery = () => {
           <h2 className="text-xl mb-12">Don't hesitate to contact us</h2>
         </div>
         <div className="p-2">
-          <button className="btn btn-accent mx-4 mb-4">
+          <button onClick={handleQuote} className="btn btn-accent mx-4 mb-4">
             Request for quote
           </button>
           <button onClick={handleContact} className="btn btn-primary mx-2">
