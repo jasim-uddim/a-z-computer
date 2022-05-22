@@ -22,7 +22,7 @@ const BusinessSummery = () => {
       <h2 className="text-center font-bold text-xl">
         TRY TO UNDERSTAND USERS EXPECTATION
       </h2>
-      <div className="pl-12 mt-14 columns-1 md:columns-2 lg:columns-3">
+      <div className="pl-12 mt-14 flex flex-col md:flex-row lg:flex-row justify-around">
         <div className="text-8xl text-primary pl-2.5">
           <AiFillFlag />
           <div>
@@ -46,7 +46,7 @@ const BusinessSummery = () => {
           </div>
         </div>
       </div>
-      <div className="columns-1 md:columns-2 box-border shadow-lg rounded-tr-lg mt-12">
+      <div className="flex flex-col lg:flex-row items-center justify-around box-border shadow-lg rounded-tr-lg mt-12">
         <div className="p-12">
           <h1 className="text-primary font-bold text-xl">
             HAVE ANY QUESTION ABOUT US OR GAT
