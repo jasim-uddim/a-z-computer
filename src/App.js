@@ -11,6 +11,7 @@ import RequireAuth from "./Pages/Login/RequireAuth";
 import SignUp from "./Pages/Login/SignUp";
 import Review from "./Pages/Home/Review";
 import Support from "./Pages/Home/Support";
+import Payment from "./Pages/Payment/Payment";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
+        <Route path="/payment" element={<Payment></Payment>}></Route>
         <Route path="/support" element={<Support></Support>}></Route>
         <Route path="/signup" element={<SignUp></SignUp>}></Route>
         <Route

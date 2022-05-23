@@ -1,10 +1,20 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import auth from "../../firebase.init";
+import { useAuthState } from "react-firebase-hooks/auth";
 
 const Review = () => {
+  const [user] = useAuthState(auth);
+  console.log(user);
   const { register, handleSubmit } = useForm();
   const onSubmit = (data) => {
-    console.log(data);
+    if (user) {
+      const review = {
+        displayName: user.displayName,
+        photoUrl: user.photoURL,
+        data: data,
+      };
+    }
   };
   return (
     <div className="flex h-screen justify-center items-center">

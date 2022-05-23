@@ -5,7 +5,7 @@ import Parts from "./Parts";
 const Tools = () => {
   const [parts, setParts] = useState([]);
   useEffect(() => {
-    fetch("tools.json")
+    fetch("http://localhost:5001/service")
       .then((res) => res.json())
       .then((data) => setParts(data));
   }, []);
