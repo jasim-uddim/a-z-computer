@@ -1,15 +1,15 @@
 import React from "react";
 
-const UserReview = ({ ureview }) => {
-  const { displayName, photoURL, review } = ureview;
+const UserReview = ({ data }) => {
+  const { displayName, photoUrl, text, number } = data;
   return (
     <div>
       <div className="hero-content flex-col lg:flex-row">
         <img
           style={{ height: "100px" }}
           src={
-            photoURL
-              ? photoURL
+            photoUrl
+              ? photoUrl
               : "https://i.ibb.co/M8pgDX9/1024px-User-avatar-svg.png"
           }
           alt="userPhoto"
@@ -17,7 +17,8 @@ const UserReview = ({ ureview }) => {
         />
         <div>
           <h1 className="text-2xl font-bold">{displayName}</h1>
-          <p className="py-6">{review}</p>
+          <p>{text}</p>
+          <p>{number}star</p>
         </div>
       </div>
     </div>
