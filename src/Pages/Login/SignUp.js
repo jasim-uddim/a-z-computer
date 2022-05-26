@@ -43,7 +43,7 @@ const SignUp = () => {
   }
 
   if (user || gUser) {
-    navigate("/purchase");
+    navigate("/");
   }
   // if (token) {
   //     navigate('/purchase');
