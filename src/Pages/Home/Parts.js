@@ -25,7 +25,7 @@ const Parts = ({ part }) => {
       newOrder.quantity = order;
       newOrder.email = email;
       newOrder.time = Date().toLocaleString();
-      fetch(`http://localhost:5001/orders`, {
+      fetch(`https://young-mountain-94737.herokuapp.com/orders`, {
         method: "POST",
         headers: {
           "content-type": "application/json",

@@ -5,12 +5,15 @@ const ShowUser = ({ user, refetch, index }) => {
   const { _id, email, role } = user;
 
   const makeAdmin = () => {
-    fetch(`http://localhost:5001/user/admin/${email}?role=${role}`, {
-      method: "PUT",
-      headers: {
-        authorization: `Bearer ${localStorage.getItem("accessToken")}`,
-      },
-    })
+    fetch(
+      `https://young-mountain-94737.herokuapp.com/user/admin/${email}?role=${role}`,
+      {
+        method: "PUT",
+        headers: {
+          authorization: `Bearer ${localStorage.getItem("accessToken")}`,
+        },
+      }
+    )
       .then((res) => {
         if (res.status === 403) {
           toast.error("Failed to Make an admin");
@@ -28,7 +31,7 @@ const ShowUser = ({ user, refetch, index }) => {
   const removeUser = () => {
     const proceed = window.confirm("Are you sure?");
     if (proceed) {
-      fetch(`http://localhost:5001/user/${_id}`, {
+      fetch(`https://young-mountain-94737.herokuapp.com/user/${_id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())
