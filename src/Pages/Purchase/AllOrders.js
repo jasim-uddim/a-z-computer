@@ -1,5 +1,6 @@
 import React from "react";
 import useUserOrder from "../../hooks/useUserOrder";
+
 import ShowOrders from "./ShowOrders";
 
 const AllOrders = () => {
@@ -9,7 +10,7 @@ const AllOrders = () => {
     // delete item._id;
     item.orderStatus = "Cancelled";
 
-    fetch(`http://localhost:5000/update/${id}`, {
+    fetch(`http://localhost:5001/update/${id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",
@@ -26,7 +27,7 @@ const AllOrders = () => {
     const proceed = window.confirm("Are you sure?");
     if (proceed) {
       // Send delete data to server
-      const url = `http://localhost:5000/orders/${id}`;
+      const url = `http://localhost:5001/orders/${id}`;
       fetch(url, {
         method: "DELETE",
       })

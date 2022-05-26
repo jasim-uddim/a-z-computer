@@ -1,6 +1,7 @@
 import React from "react";
 import { useQuery } from "react-query";
-import Loading from "../Shared/Loading/Loading";
+import Loading from "../Shared/Loading";
+
 import ShowUser from "./ShowUser";
 
 const AllUser = () => {
