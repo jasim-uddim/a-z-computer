@@ -110,7 +110,7 @@ const Dashboard = () => {
                     <SiManageiq />
                   </span>
                   <div className="flex justify-between w-full">
-                    <Link to="/dashboard/manageProduct">Manage Products</Link>
+                    <Link to="/dashboard/manageProduct">My profile</Link>
                     <span className="text-xl">
                       <IoIosArrowForward />
                     </span>

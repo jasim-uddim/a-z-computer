@@ -25,6 +25,7 @@ import AllProduct from "./Pages/Dashboard/AllProduct";
 import ManageProduct from "./Pages/Dashboard/ManageProduct";
 import Purchase from "./Pages/Purchase/Purchase";
 import Blogs from "./Pages/Blogs/Blogs";
+import NotFound from "./Pages/Shared/NotFound";
 
 function App() {
   return (
@@ -69,6 +70,7 @@ function App() {
           <Route path="addProduct" element={<AllProduct />} />
           <Route path="manageProduct" element={<ManageProduct />} />
         </Route>
+        <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
       <ToastContainer />
     </div>
