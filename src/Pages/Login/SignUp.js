@@ -42,7 +42,7 @@ const SignUp = () => {
     );
   }
 
-  if (token) {
+  if (user || gUser) {
     navigate("/purchase");
   }
   // if (token) {

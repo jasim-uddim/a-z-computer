@@ -19,7 +19,7 @@ import AllOrders from "./Pages/Purchase/AllOrders";
 import PanddingOrder from "./Pages/Purchase/PanddingOrder";
 import CancelledOrder from "./Pages/Purchase/CancelledOrder";
 import Complate from "./Pages/Purchase/Complate";
-import MyReviews from "./Pages/Dashboard/MyReviews";
+
 import AllUser from "./Pages/Dashboard/AllUser";
 import AllProduct from "./Pages/Dashboard/AllProduct";
 import ManageProduct from "./Pages/Dashboard/ManageProduct";
