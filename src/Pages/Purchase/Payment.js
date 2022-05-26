@@ -109,7 +109,7 @@ const Payment = () => {
           </header>
           <div className="bg-white py-5 px-3">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mx-auto">
-              <div class="text-2xl font-bold flex items-center">
+              <div className="text-2xl font-bold flex items-center">
                 <input
                   className="mr-5 radio checked:bg-red-500"
                   type="radio"
@@ -121,7 +121,7 @@ const Payment = () => {
                   <span>Cash on Delivery</span>
                 </label>
               </div>
-              <div class="text-xl flex items-center">
+              <div className="text-xl flex items-center">
                 <input
                   className="mr-5 radio checked:bg-red-500 "
                   type="radio"
@@ -132,7 +132,7 @@ const Payment = () => {
                   <img src={"https://i.ibb.co/4NGZDt9/bkash.png"} alt="" />
                 </label>
               </div>
-              <div class="text-xl flex items-center">
+              <div className="text-xl flex items-center">
                 <input
                   className="mr-5 radio checked:bg-red-500 "
                   type="radio"
@@ -143,7 +143,7 @@ const Payment = () => {
                   <img src={"https://i.ibb.co/bsjSp4r/icon-ssl.png"} alt="" />
                 </label>
               </div>
-              <div class="text-xl flex items-center">
+              <div className="text-xl flex items-center">
                 <input
                   className="mr-5 radio checked:bg-red-500 "
                   type="radio"
@@ -156,8 +156,8 @@ const Payment = () => {
               </div>
             </div>
           </div>
-          <div class="card flex-shrink-0 shadow-2xl bg-base-100">
-            <div class="card-body">
+          <div className="card flex-shrink-0 shadow-2xl bg-base-100">
+            <div className="card-body">
               <Elements stripe={stripePromise}>
                 <CheckoutForm
                   total={{

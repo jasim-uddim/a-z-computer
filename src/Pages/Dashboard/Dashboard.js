@@ -76,7 +76,49 @@ const Dashboard = () => {
             </div>
           </li>
 
-          {admin && (
+          <>
+            <li className="mt-3">
+              <div className="flex">
+                <span className="text-xl">
+                  <FaUsers />
+                </span>
+                <div className="flex justify-between w-full">
+                  <Link to="/dashboard/users">All Users</Link>
+                  <span className="text-xl">
+                    <IoIosArrowForward />
+                  </span>
+                </div>
+              </div>
+            </li>
+            <li className="mt-3">
+              <div className="flex">
+                <span className="text-xl">
+                  <FaProductHunt />
+                </span>
+                <div className="flex justify-between w-full">
+                  <Link to="/dashboard/addProduct">Add Product</Link>
+                  <span className="text-xl">
+                    <IoIosArrowForward />
+                  </span>
+                </div>
+              </div>
+            </li>
+            <li className="mt-3">
+              <div className="flex">
+                <span className="text-xl">
+                  <SiManageiq />
+                </span>
+                <div className="flex justify-between w-full">
+                  <Link to="/dashboard/manageProduct">Manage Products</Link>
+                  <span className="text-xl">
+                    <IoIosArrowForward />
+                  </span>
+                </div>
+              </div>
+            </li>
+          </>
+
+          {/* {admin && (
             <>
               <li className="mt-3">
                 <div className="flex">
@@ -118,7 +160,7 @@ const Dashboard = () => {
                 </div>
               </li>
             </>
-          )}
+          )} */}
         </ul>
       </div>
       <div className="w-full md:w-3/4 lg:w-4/5">

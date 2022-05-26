@@ -5,7 +5,7 @@ const ShowUser = ({ user, refetch, index }) => {
   const { _id, email, role } = user;
 
   const makeAdmin = () => {
-    fetch(`http://localhost:5000/user/admin/${email}?role=${role}`, {
+    fetch(`http://localhost:5001/user/admin/${email}?role=${role}`, {
       method: "PUT",
       headers: {
         authorization: `Bearer ${localStorage.getItem("accessToken")}`,
@@ -28,7 +28,7 @@ const ShowUser = ({ user, refetch, index }) => {
   const removeUser = () => {
     const proceed = window.confirm("Are you sure?");
     if (proceed) {
-      fetch(`http://localhost:5000/user/${_id}`, {
+      fetch(`http://localhost:5001/user/${_id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())
