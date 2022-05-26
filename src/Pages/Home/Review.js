@@ -17,7 +17,7 @@ const Review = () => {
       data.displayName = user?.displayName;
       data.photoUrl = user?.photoURL;
 
-      fetch("http://localhost:5001/reviews", {
+      fetch("https://young-mountain-94737.herokuapp.com/reviews", {
         method: "POST",
         headers: {
           "content-type": "application/json",

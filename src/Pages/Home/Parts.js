@@ -5,10 +5,6 @@ import auth from "../../firebase.init";
 import { useAuthState } from "react-firebase-hooks/auth";
 
 const Parts = ({ part }) => {
-  const navigate = useNavigate();
-  const [user] = useAuthState(auth);
-  const [order, setOrder] = useState(part.minimumOrderQuantity);
-  const email = user?.email;
   const {
     name,
     img,
@@ -17,32 +13,13 @@ const Parts = ({ part }) => {
     availableQuantity,
     minimumOrderQuantity,
   } = part;
+  const navigate = useNavigate();
+  const [user] = useAuthState(auth);
+  const [order, setOrder] = useState(minimumOrderQuantity);
 
-  const makeOrder = () => {
-    if (order >= minimumOrderQuantity && order <= availableQuantity) {
-      const newOrder = part;
-      newOrder.quantity = order;
-      newOrder.email = email;
-      newOrder.time = Date().toLocaleString();
-      fetch("http://localhost:5001/orders", {
-        method: "POST",
-        headers: {
-          "content-type": "application/json",
-        },
-        body: JSON.stringify(newOrder),
-      })
-        .then((res) => res.json())
-        .then((result) => {
-          if (result.success === true) {
-          } else {
-            alert("Already exist update your order");
-          }
-        });
-      navigate("/purchase");
-    } else {
-      alert("Make sure your Order Quantity");
-    }
-  };
+  const email = user?.email;
+
+  // navigate("/purchase");
 
   return (
     <div className="card bg-base-100 shadow-xl">
@@ -62,9 +39,7 @@ const Parts = ({ part }) => {
           className="input input-bordered w-full max-w-xs"
         />
         <div className="card-actions">
-          <button onClick={makeOrder} className="btn btn-primary">
-            Buy Now
-          </button>
+          <button className="btn btn-primary">Buy Now</button>
         </div>
       </div>
     </div>

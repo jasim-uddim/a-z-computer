@@ -5,7 +5,7 @@ import Parts from "./Parts";
 const Tools = () => {
   const [parts, setParts] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5001/service")
+    fetch("https://young-mountain-94737.herokuapp.com/service")
       .then((res) => res.json())
       .then((data) => setParts(data));
   }, []);

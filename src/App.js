@@ -12,6 +12,7 @@ import SignUp from "./Pages/Login/SignUp";
 import Review from "./Pages/Home/Review";
 import Support from "./Pages/Home/Support";
 import Payment from "./Pages/Payment/Payment";
+import Dashboard from "./Pages/Dashboard/Dashboard";
 
 function App() {
   return (
@@ -36,6 +37,14 @@ function App() {
           element={
             <RequireAuth>
               <Review></Review>
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="/dashboard"
+          element={
+            <RequireAuth>
+              <Dashboard></Dashboard>
             </RequireAuth>
           }
         ></Route>

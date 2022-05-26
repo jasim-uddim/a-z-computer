@@ -7,16 +7,19 @@ import Data from "../Data";
 const Purchase = () => {
   const [user] = useAuthState(auth);
   // const navigate = useNavigate();
-  const [order, setOrder] = useState([]);
+  const [orders, setOrders] = useState([]);
   const [update, setUpdate] = useState(0);
+  console.log(update);
 
   useEffect(() => {
     if (user) {
-      fetch(`http://localhost:5001/orders/?email=${user?.email}`)
+      fetch(
+        `https://young-mountain-94737.herokuapp.com/orders/?email=${user?.email}`
+      )
         .then((res) => res.json())
-        .then((data) => setOrder(data));
+        .then((data) => setOrders(data));
     }
-  }, [user, order]);
+  }, [user, orders]);
 
   return (
     <div>
@@ -33,11 +36,11 @@ const Purchase = () => {
           </tr>
         </thead>
         <tbody>
-          {order.map((o, i) => (
+          {orders.map((order, index) => (
             <Data
-              key={i}
-              info={o}
-              i={i}
+              key={index}
+              order={order}
+              index={index}
               update={update}
               setUpdate={setUpdate}
             ></Data>
